@@ -17,13 +17,14 @@
   }
   /* style header */
   .header{
-    margin: 20px 140px;
+    /* margin: 20px 140px; */
   }
   .header .nav-area{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     justify-content: space-between;
     align-items: center;
+    margin: 20px 140px;
   }
 
 .header .brand-name{
@@ -38,7 +39,8 @@
 }
 .header .nav-icon{
     position: absolute;
-    top: 30px;
+    font-size: 30px;
+    top: 35px;
     right: 23px;
     display: none;
 }
@@ -72,12 +74,61 @@
     font-weight: 600px;
     font-size: 1.25rem;
 }
+.line{
+    border: 0.5px solid #FEA301;
+    display: none;
+    
+}
+/* hero section */
+.hero{
+    display: flex;
+    column-gap: 50px;
+    margin: 20px 140px;
+}
+.hero .tittle-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+}
+.hero .tittle-container .tittle{
+    font-weight: 700px;
+    font-size: 3.5rem;
+}
+.hero .tittle-container .Empowering{
+    color: rgb(254, 163, 1);
+}
+.hero .tittle-container .towards-vision{
+    color: rgb(1, 172, 253);
+}
+.hero .btn-praimary .btn{
+    border: none;
+    padding: 10px 40px;
+    color: #fff;
+    background-color: Black;
+    font-weight: 700px;
+    font-size: 1.25rem;
+    border-radius: 12px;
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width:576px){
-    .header{
-        margin: 10px 10px;
-      }
+    /* nav area */
+    /* .header{
+        margin: 10px 20px;
+      } */
+    .header .nav-area{
+        margin: 20px 20px;
+    }
+    .brand-img{
+        width: 50%;
+    }
     .header .school{
         display: none;
     }
@@ -90,5 +141,20 @@
     .header .nav-icon{
         display: block;
         align-items: center;
+    }
+    .line{
+        display: block;
+    }
+    /* hero area */
+    .hero{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        margin: 20px 20px;
+    }
+    .hero .img-container img{
+        width: 100%;
+    }
+    .hero .tittle-container{
+        text-align: center;
     }
 }
