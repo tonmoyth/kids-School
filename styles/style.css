@@ -15,10 +15,18 @@
     margin: 0px;
     padding: 0px;
   }
+  /* comon syle */
+  .hero .btn-praimary .btn{
+    border: none;
+    padding: 10px 40px;
+    color: #fff;
+    background-color: Black;
+    font-weight: 700px;
+    font-size: 1.25rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
   /* style header */
-  .header{
-    /* margin: 20px 140px; */
-  }
   .header .nav-area{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
@@ -101,15 +109,7 @@
 .hero .tittle-container .towards-vision{
     color: rgb(1, 172, 253);
 }
-.hero .btn-praimary .btn{
-    border: none;
-    padding: 10px 40px;
-    color: #fff;
-    background-color: Black;
-    font-weight: 700px;
-    font-size: 1.25rem;
-    border-radius: 12px;
-}
+
 
 
 
@@ -119,10 +119,6 @@
 
 
 @media screen and (max-width:576px){
-    /* nav area */
-    /* .header{
-        margin: 10px 20px;
-      } */
     .header .nav-area{
         margin: 20px 20px;
     }
