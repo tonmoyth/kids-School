@@ -265,10 +265,43 @@
     border-radius: 12px 12px 0px 0px;
 }
 
-
-
-
-
+/* about-school */
+.footer{
+    padding: 100px 100px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: 100px;
+    font-family: "Quicksand", serif;
+    background-color: #2980b9;
+    color: #fff;
+}
+.footer .education-brand-container{
+    display: flex;
+    margin-bottom: 20px;
+}
+.footer .school-tittle{
+    margin-bottom: 10px;
+}
+.footer .about-school .list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    list-style: none;
+   
+}
+.footer .about-school .list a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.footer .touch{
+    margin-bottom: 10px;
+}
+.footer .icon img{
+    width: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+}
 
 
 
@@ -332,5 +365,22 @@
     .our-stories .card-container{
         grid-template-columns: 1fr 1fr;
         gap: 15px;
+    }
+    .our-stories .card-container .card .year-zone, .our-stories .card-container .card .year-zone-blue {
+        padding: 5px;
+        border-radius: 20px;
+        color: #fff;
+        background-color: rgb(149, 178, 38);
+        position: absolute;
+        top: -30px;
+        left: 10px;
+    }
+    /* footer */
+    .footer{
+        padding: 20px 20px;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .education-brand-container, .discription, .list{
+        margin-bottom: 30px;
     }
 }
