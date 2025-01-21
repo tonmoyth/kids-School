@@ -5,12 +5,6 @@
     font-optical-sizing: auto;
     font-style: normal;
   }
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-.raleway-font {
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
   *{
     margin: 0px;
     padding: 0px;
@@ -109,13 +103,64 @@
 .hero .tittle-container .towards-vision{
     color: rgb(1, 172, 253);
 }
+/* style standard-curriculum */
+.standard-curriculum{
+    margin: 0px 140px;
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.standard-curriculum .tittle{
+    text-align: center;
+    font-weight: 700px;
+    font-size: 2.8rem;
+    font-family: "Quicksand", serif;
+    margin-top: 75px;
+}
+.standard-curriculum .card-container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: 25px;
+    margin-top: 30px;
+}
+.standard-curriculum .card-container .card{
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family: "Quicksand", serif;
+    box-shadow: inset 0px 0px 28px 1px rgba(0, 0, 0, 0.05)
+}
+.standard-curriculum .card-container .card .discription{
+    color: #808080;
+}
+.standard-curriculum .card-container .card .read-more{
+    text-decoration: none;
+    font-weight: bold;
+}
+.standard-curriculum .card-container .read-one{
+    color: #64C8FF;
+}
+.standard-curriculum .card-container .read-two{
+    color: #F0AA00;
+}
+.standard-curriculum .card-container .read-four{
+    color: #8700FF;
+}
+.standard-curriculum .card-container .first-card{
+    background: linear-gradient(to bottom, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%);
+}
+.standard-curriculum .card-container .secound-card{
+    background: linear-gradient(to bottom, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%);
+}
+.standard-curriculum .card-container .thard-card{
+    background: linear-gradient(to bottom,rgb(238, 225, 255),rgba(255, 255, 255, 0) 20%);
 
-
-
-
-
-
-
+}
 
 
 @media screen and (max-width:576px){
@@ -152,5 +197,17 @@
     }
     .hero .tittle-container{
         text-align: center;
+    }
+    /* standard curriculum */
+    .standard-curriculum{
+        margin:0px 20px ;
+    }
+    .standard-curriculum .card-container{
+        grid-template-columns: repeat(1 , 1fr);
+        row-gap: 20px;
+        margin-top: 40px;
+    }
+    .standard-curriculum .tittle{
+        font-size: 1.6rem;
     }
 }
