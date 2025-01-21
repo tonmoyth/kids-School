@@ -10,7 +10,7 @@
     padding: 0px;
   }
   /* comon syle */
-  .hero .btn-praimary .btn{
+  .btn-praimary .btn{
     border: none;
     padding: 10px 40px;
     color: #fff;
@@ -19,6 +19,10 @@
     font-size: 1.25rem;
     border-radius: 12px;
     cursor: pointer;
+}
+.btn-center{
+    text-align: center;
+    margin-top: 50px;
 }
   /* style header */
   .header .nav-area{
@@ -161,6 +165,111 @@
     background: linear-gradient(to bottom,rgb(238, 225, 255),rgba(255, 255, 255, 0) 20%);
 
 }
+.standard-curriculum .arrow{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    margin-top: 70px;
+}
+.standard-curriculum .arrow .less-than{
+    width: 50px;
+    height: 50px;
+    background-color: #FEA301;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.25rem;
+}
+.standard-curriculum .arrow .greater-than {
+    width: 50px;
+    height: 50px;
+    background-color: #FEA301;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.25rem;
+}
+/* our-stories style */
+.our-stories{
+    padding: 60px 140px;
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%),url(../assets/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Quicksand", serif;
+    
+}
+.our-stories .tittle{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.our-stories .card-container{
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr;
+    gap: 15px;
+}
+.our-stories .card-container .card{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 12px;
+}
+.our-stories .year-zone-one{
+    background-color: #3cd8e8;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+}
+.our-stories .card-container .card .year-zone{
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgb(149, 178, 38);
+    position: absolute;
+    top: -30px;
+    left: 20px;
+}
+.our-stories .card-container .card .year-zone-blue{
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgb(93, 88, 240);
+    position: absolute;
+    top: -30px;
+    left: 20px;
+}
+.our-stories .card-tittle-container{
+    padding: 25px;
+    position: relative;
+}
+.our-stories .card-tittle-container #Beautiful{
+    position: absolute;
+    left: 20px;
+    top: 130px;
+    padding-right: 25px;
+}
+.our-stories .card-container .card-first{
+    grid-row: 1 / span 3;
+    height: 98%;
+}
+.card-img{
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width:576px){
@@ -209,5 +318,19 @@
     }
     .standard-curriculum .tittle{
         font-size: 1.6rem;
+    }
+    .standard-curriculum .arrow{
+        display: none;
+    }
+    /* Our Stories */
+    .our-stories{
+        padding: 20px 20px;
+    }
+    .our-stories .card-container .card-first{
+        display: none;
+    }
+    .our-stories .card-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
     }
 }
