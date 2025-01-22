@@ -285,7 +285,7 @@
 .our-stories .card-tittle-container #Beautiful{
     position: absolute;
     left: 20px;
-    top: 130px;
+    top: 90px;
     padding-right: 20px;
 }
 .our-stories .card-container .card-first{
@@ -311,8 +311,8 @@
     display: flex;
     margin-bottom: 20px;
 }
-.footer .kids-education{
-    margin-left: 15px;
+.footer .group-img{
+    margin-right: 15px;
 }
 .footer .school-tittle{
     margin-bottom: 10px;
@@ -421,4 +421,115 @@
     .education-brand-container, .discription, .list{
         margin-bottom: 30px;
     }
+}
+@media screen and (min-width:576px) and (max-width:992px){
+    .header .nav-area{
+        padding: 35px 35px;
+    }
+    .brand-img{
+        width: 50%;
+    }
+    .header .school{
+        display: none;
+    }
+    .header .list-item{
+        display: none;
+    }
+    .header .btn-container{
+        display: none;
+    }
+    .header .nav-icon{
+        display: block;
+        align-items: center;
+    }
+    .line{
+        display: block;
+    }
+    /* hero area */
+    .hero{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 35px 35px;
+    }
+    .hero .img-container img{
+        width: 100%;
+    }
+    .hero .tittle-container{
+        text-align: center;
+    }
+    /* standard curriculum */
+    .standard-curriculum{
+        padding:0px 35px ;
+    }
+    .standard-curriculum .card-container{
+        grid-template-columns: repeat(2 , 1fr);
+        row-gap: 20px;
+        padding-top: 40px;
+    }
+    .standard-curriculum .tittle{
+        font-size: 1.6rem;
+    }
+    .standard-curriculum .arrow{
+        display: none;
+    }
+     /* Our Stories */
+     .our-stories{
+        padding: 35px 35px;
+    }
+    .our-stories .card-container .card-first{
+        display: none;
+    }
+    .our-stories .card-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .our-stories .card-container .card .year-zone, .our-stories .card-container .card .year-zone-blue {
+        padding: 5px;
+        border-radius: 20px;
+        color: #fff;
+        background-color: rgb(149, 178, 38);
+        position: absolute;
+        top: -30px;
+        left: 10px;
+    }
+    /* footer */
+    .footer{
+        padding: 35px 35px;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    .education-brand-container, .discription, .list{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    .header .nav-area{
+        padding: 30px 30px;
+    }
+    .brand-img{
+        width: 50%;
+    }
+    .header .nav-icon{
+        display: none;
+    }
+    .line{
+        display: none;
+    }
+     /* hero area */
+     .hero{
+        padding: 30px 30px;
+    }
+    
+    /* standard curriculum */
+    .standard-curriculum{
+        padding:0px 30px ;
+    }
+    /* Our Stories */
+    .our-stories{
+        padding: 30px 30px;
+    }
+    .our-stories .card-tittle-container #Beautiful{
+        top: 60px;
+        
+    }
+    
 }
